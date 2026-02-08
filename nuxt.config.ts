@@ -15,17 +15,17 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'solving real problems, building things that work' },
+        { name: 'description', content: 'building software that works' },
         { name: 'theme-color', content: '#0b0f1a' },
         // Open Graph
         { property: 'og:title', content: 'clara seijo · software developer' },
-        { property: 'og:description', content: 'solving real problems, building things that work' },
+        { property: 'og:description', content: 'building software that works' },
         { property: 'og:image', content: '/og-image.svg' },
         { property: 'og:type', content: 'website' },
         // Twitter
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:title', content: 'clara seijo · software developer' },
-        { name: 'twitter:description', content: 'solving real problems, building things that work' },
+        { name: 'twitter:description', content: 'building software that works' },
         { name: 'twitter:image', content: '/og-image.svg' }
       ],
       link: [
