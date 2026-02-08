@@ -81,12 +81,21 @@
         <h2 class="text-3xl md:text-4xl font-normal mb-12 text-[var(--text-primary)]">about</h2>
         <div class="glass rounded-2xl p-8 lg:p-10">
           <p class="text-lg text-[var(--text-secondary)] leading-relaxed mb-6">
-            building systems that work, shipping code that matters
+            learning by building, shipping ideas into working systems
           </p>
           <p class="text-lg text-[var(--text-secondary)] leading-relaxed">
-            eager to create impact in a team that values craft and delivery, one commit at a time
+            lucky to keep growing alongside great engineers who value clean code and real impact
           </p>
         </div>
+      </div>
+    </section>
+
+    <!-- Terminal -->
+    <section id="pragmatic" class="px-6 py-24 bg-[var(--bg)]">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-normal mb-12 text-center text-[var(--text-primary)]">the new pragmatic programmer</h2>
+        <p class="text-center text-[var(--text-secondary)] mb-12 text-sm">ai-free version</p>
+        <TerminalWindow />
       </div>
     </section>
 

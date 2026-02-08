@@ -1,7 +1,7 @@
 <template>
   <button
     @click="toggleTheme"
-    class="fixed top-6 right-6 z-50 p-3 glass rounded-xl hover:bg-[var(--accent-subtle)] hover:bg-opacity-10 transition-all duration-250 hover:-translate-y-1 hover:scale-105"
+    class="fixed top-6 right-6 z-50 p-3 glass rounded-xl hover:bg-[var(--surface)] hover:bg-opacity-60 transition-all duration-250 hover:-translate-y-1 hover:scale-105"
     aria-label="Toggle theme"
   >
     <svg v-if="theme === 'dark'" class="w-5 h-5 text-[var(--text-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">

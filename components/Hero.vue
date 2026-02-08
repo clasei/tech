@@ -74,7 +74,7 @@
 }
 
 .crystal-link:hover {
-  color: #ffffff;
+  color: var(--text-primary);
   border-color: rgba(120, 140, 255, 0.5);
   box-shadow: 
     0 8px 24px rgba(110, 168, 255, 0.2),
