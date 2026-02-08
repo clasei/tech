@@ -4,7 +4,7 @@
       <!-- Left: Info -->
       <div class="space-y-8">
         <div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal mb-4 text-[var(--text-primary)] tracking-tight">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal mb-4 text-[var(--text-secondary)] tracking-tight">
             clara seijo
           </h1>
           <p class="text-xl md:text-2xl text-[var(--text-secondary)] mb-3 leading-relaxed">
@@ -49,7 +49,7 @@
       </div>
 
       <!-- Right: Cube -->
-      <div class="flex justify-center md:justify-end">
+      <div class="flex justify-center md:justify-end md:pr-0">
         <CubeCard />
       </div>
     </div>
@@ -74,11 +74,11 @@
 }
 
 .crystal-link:hover {
-  color: var(--accent);
-  border-color: rgba(120, 140, 255, 0.4);
+  color: #ffffff;
+  border-color: rgba(120, 140, 255, 0.5);
   box-shadow: 
-    0 8px 24px rgba(110, 168, 255, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    0 8px 24px rgba(110, 168, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
 }
 </style>

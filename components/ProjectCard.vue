@@ -25,7 +25,7 @@
       <span
         v-for="tech in project.stack"
         :key="tech"
-        class="text-xs text-[var(--text-primary)] opacity-60 font-mono"
+        class="px-2 py-0.5 text-xs text-[var(--text-primary)] opacity-60 font-mono border border-[var(--border)] rounded-md"
       >
         {{ tech }}
       </span>

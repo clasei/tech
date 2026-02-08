@@ -38,7 +38,7 @@
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">frontend</p>
                 <div class="flex flex-wrap gap-3">
-                  <span v-for="tech in frontendStack" :key="tech" class="text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono">
+                  <span v-for="tech in frontendStack" :key="tech" class="px-2.5 py-1 text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono border border-[var(--border)] rounded-md">
                     {{ tech }}
                   </span>
                 </div>
@@ -46,7 +46,7 @@
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">backend</p>
                 <div class="flex flex-wrap gap-3">
-                  <span v-for="tech in backendStack" :key="tech" class="text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono">
+                  <span v-for="tech in backendStack" :key="tech" class="px-2.5 py-1 text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono border border-[var(--border)] rounded-md">
                     {{ tech }}
                   </span>
                 </div>
@@ -54,7 +54,7 @@
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">tools</p>
                 <div class="flex flex-wrap gap-3">
-                  <span v-for="tech in toolsStack" :key="tech" class="text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono">
+                  <span v-for="tech in toolsStack" :key="tech" class="px-2.5 py-1 text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono border border-[var(--border)] rounded-md">
                     {{ tech }}
                   </span>
                 </div>
