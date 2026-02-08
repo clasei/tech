@@ -37,24 +37,24 @@
             <div class="space-y-4">
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">frontend</p>
-                <div class="flex flex-wrap gap-3">
-                  <span v-for="tech in frontendStack" :key="tech" class="px-2.5 py-1 text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono border border-[var(--border)] rounded-md">
+                <div class="flex flex-wrap gap-2">
+                  <span v-for="tech in frontendStack" :key="tech" class="px-1.5 py-0.5 text-xs text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono border border-[var(--border)] rounded">
                     {{ tech }}
                   </span>
                 </div>
               </div>
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">backend</p>
-                <div class="flex flex-wrap gap-3">
-                  <span v-for="tech in backendStack" :key="tech" class="px-2.5 py-1 text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono border border-[var(--border)] rounded-md">
+                <div class="flex flex-wrap gap-2">
+                  <span v-for="tech in backendStack" :key="tech" class="px-1.5 py-0.5 text-xs text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono border border-[var(--border)] rounded">
                     {{ tech }}
                   </span>
                 </div>
               </div>
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">tools</p>
-                <div class="flex flex-wrap gap-3">
-                  <span v-for="tech in toolsStack" :key="tech" class="px-2.5 py-1 text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono border border-[var(--border)] rounded-md">
+                <div class="flex flex-wrap gap-2">
+                  <span v-for="tech in toolsStack" :key="tech" class="px-1.5 py-0.5 text-xs text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono border border-[var(--border)] rounded">
                     {{ tech }}
                   </span>
                 </div>
@@ -93,8 +93,7 @@
     <!-- Terminal -->
     <section id="pragmatic" class="px-6 py-24 bg-[var(--bg)]">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-normal mb-12 text-center text-[var(--text-primary)]">the new pragmatic programmer</h2>
-        <p class="text-center text-[var(--text-secondary)] mb-12 text-sm">ai-free version</p>
+        <h2 class="text-3xl md:text-4xl font-normal mb-16 text-[var(--text-primary)]">the new pragmatic programmer</h2>
         <TerminalWindow />
       </div>
     </section>

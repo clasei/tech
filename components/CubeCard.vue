@@ -18,8 +18,8 @@
 <style scoped>
 .cube-container {
   position: relative;
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,8 +33,8 @@
 }
 
 .scene {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   perspective: 800px;
 }
 
@@ -63,8 +63,8 @@
 
 .cube-face {
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border: 2px solid var(--accent);
   opacity: 0.75;
   backdrop-filter: blur(10px);
@@ -72,31 +72,31 @@
 
 .cube-face--front {
   background: linear-gradient(135deg, rgba(110, 168, 255, 0.3), rgba(58, 92, 255, 0.2));
-  transform: rotateY(0deg) translateZ(90px);
+  transform: rotateY(0deg) translateZ(75px);
 }
 
 .cube-face--back {
   background: linear-gradient(135deg, rgba(58, 92, 255, 0.3), rgba(110, 168, 255, 0.2));
-  transform: rotateY(180deg) translateZ(90px);
+  transform: rotateY(180deg) translateZ(75px);
 }
 
 .cube-face--right {
   background: linear-gradient(135deg, rgba(110, 168, 255, 0.25), rgba(58, 92, 255, 0.25));
-  transform: rotateY(90deg) translateZ(90px);
+  transform: rotateY(90deg) translateZ(75px);
 }
 
 .cube-face--left {
   background: linear-gradient(135deg, rgba(58, 92, 255, 0.25), rgba(110, 168, 255, 0.25));
-  transform: rotateY(-90deg) translateZ(90px);
+  transform: rotateY(-90deg) translateZ(75px);
 }
 
 .cube-face--top {
   background: linear-gradient(135deg, rgba(110, 168, 255, 0.2), rgba(58, 92, 255, 0.3));
-  transform: rotateX(90deg) translateZ(90px);
+  transform: rotateX(90deg) translateZ(75px);
 }
 
 .cube-face--bottom {
   background: linear-gradient(135deg, rgba(58, 92, 255, 0.2), rgba(110, 168, 255, 0.3));
-  transform: rotateX(-90deg) translateZ(90px);
+  transform: rotateX(-90deg) translateZ(75px);
 }
 </style>
