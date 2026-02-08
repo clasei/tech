@@ -81,10 +81,13 @@
         <h2 class="text-3xl md:text-4xl font-normal mb-12 text-[var(--text-primary)]">about</h2>
         <div class="glass rounded-2xl p-8 lg:p-10">
           <p class="text-lg text-[var(--text-secondary)] leading-relaxed mb-6">
-            learning by building, shipping ideas into working systems
+            learning by building, shipping ideas into working systems. started with frontend, curiosity led to fullstack, now comfortable across the entire development lifecycle
+          </p>
+          <p class="text-lg text-[var(--text-secondary)] leading-relaxed mb-6">
+            believe in writing code that's not just functional but maintainable, choosing simple solutions over clever ones, and measuring twice before optimizing
           </p>
           <p class="text-lg text-[var(--text-secondary)] leading-relaxed">
-            lucky to keep growing alongside great engineers who value clean code and real impact
+            happy to keep growing alongside great engineers who value clean code and real impact
           </p>
         </div>
       </div>
@@ -93,7 +96,6 @@
     <!-- Terminal -->
     <section id="pragmatic" class="px-6 py-24 bg-[var(--bg)]">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-normal mb-12 text-[var(--text-primary)]">the new pragmatic programmer</h2>
         <TerminalWindow />
       </div>
     </section>
