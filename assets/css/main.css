@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* dark mode colors (default) */
+  --bg: #0b0f1a;
+  --surface: #11172a;
+  --border: rgba(120, 140, 255, 0.14);
+  --text-primary: #e6ecff;
+  --text-secondary: #9aa4d1;
+  --accent: #6ea8ff;
+  --accent-subtle: #3a5cff;
+}
+
+[data-theme='light'] {
+  /* light mode colors */
+  --bg: #f7f9fc;
+  --surface: #ffffff;
+  --border: rgba(30, 50, 120, 0.12);
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent: #3a5cff;
+  --accent-subtle: #3a5cff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply bg-[var(--bg)] text-[var(--text-primary)] font-sans;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  * {
+    @apply border-[var(--border)];
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18);
+  }
+
+  [data-theme='light'] .glass {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+
+  /* reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
