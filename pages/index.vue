@@ -92,8 +92,8 @@
 
     <!-- Terminal -->
     <section id="pragmatic" class="px-6 py-24 bg-[var(--bg)]">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-normal mb-16 text-[var(--text-primary)]">the new pragmatic programmer</h2>
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-normal mb-12 text-[var(--text-primary)]">the new pragmatic programmer</h2>
         <TerminalWindow />
       </div>
     </section>

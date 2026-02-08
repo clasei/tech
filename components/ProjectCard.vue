@@ -76,6 +76,7 @@
 
 .mini-crystal-link:hover {
   color: var(--text-primary);
+  font-weight: 500;
   border-color: rgba(120, 140, 255, 0.4);
   box-shadow: 
     0 4px 12px rgba(110, 168, 255, 0.15),
