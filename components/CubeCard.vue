@@ -43,7 +43,7 @@
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  animation: rotate 18s linear infinite;
+  animation: rotate 28s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

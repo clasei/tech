@@ -12,7 +12,6 @@
         <div class="grid md:grid-cols-2 gap-8">
           <!-- How I Work -->
           <div class="glass rounded-2xl p-8 lg:p-10">
-            <h3 class="text-xl font-semibold mb-6 text-[var(--text-primary)]">how i work</h3>
             <ul class="space-y-4">
               <li class="text-[var(--text-secondary)]">
                 clarity-first ux, simple solutions over clever ones
@@ -31,7 +30,6 @@
 
           <!-- Stack -->
           <div class="glass rounded-2xl p-8 lg:p-10">
-            <h3 class="text-xl font-semibold mb-6 text-[var(--text-primary)]">stack</h3>
             <div class="space-y-4">
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">frontend</p>
@@ -93,7 +91,7 @@
       <div class="max-w-6xl mx-auto">
         <div class="flex flex-col md:flex-row justify-between items-center gap-8">
           <div class="text-[var(--text-secondary)] text-sm">
-            clasei
+            2026 · built by @clasei
           </div>
           <div class="flex gap-6">
             <a
@@ -132,55 +130,57 @@ const toolsStack = ['git', 'testing', 'ci/cd', 'docs']
 
 const projects = [
   {
-    title: 'e-commerce platform',
-    description: 'full-stack shopping experience with real-time inventory',
-    impact: 'reduced load time by 45% with lazy loading and optimized bundles',
-    keyDecision: 'chose vue 3 composition api for better type safety and reusability',
-    stack: ['vue', 'typescript', 'node', 'mongodb'],
-    liveUrl: 'https://example.com',
-    repoUrl: 'https://github.com/clasei/project'
+    title: 'flowx',
+    description: 'lightweight task tracker with sorting prioritization and clean ui',
+    impact: 'keeps things simple yet structured with minimal effort',
+    keyDecision: 'priority ranking system as critical focus or pipeline',
+    stack: ['angular', 'typescript', 'spring', 'postgresql'],
+    liveUrl: 'https://flowx-woad.vercel.app/',
+    repoUrl: 'https://github.com/clasei/flowx-client'
   },
   {
-    title: 'task management app',
-    description: 'collaborative tool for team workflows',
-    impact: 'improved user retention by 30% with intuitive drag-and-drop ui',
-    keyDecision: 'implemented optimistic updates for instant feedback',
-    stack: ['react', 'typescript', 'tailwind', 'supabase'],
-    repoUrl: 'https://github.com/clasei/project'
+    title: 'recup',
+    description: 'platform for genuine recommendations cutting through algorithmic noise',
+    impact: 'highlights valuable content by real users not algorithms',
+    keyDecision: 'user-centered recommendation system for authentic discovery',
+    stack: ['mongodb', 'express', 'react', 'node'],
+    liveUrl: 'https://just-recup.netlify.app/',
+    repoUrl: 'https://github.com/clasei/recup'
   },
   {
-    title: 'analytics dashboard',
-    description: 'real-time data visualization for business metrics',
-    impact: 'processed 100k+ events/min with efficient data aggregation',
-    keyDecision: 'used web workers for heavy calculations without blocking ui',
-    stack: ['angular', 'typescript', 'd3.js', 'spring'],
-    liveUrl: 'https://example.com',
-    repoUrl: 'https://github.com/clasei/project'
+    title: 'machinsight',
+    description: 'smart maintenance tracker for industrial machines',
+    impact: 'streamlines equipment monitoring with csv xlsx data imports',
+    keyDecision: 'fastapi converts data to json for seamless backend integration',
+    stack: ['react', 'typescript', 'node', 'fastapi', 'python'],
+    repoUrl: 'https://github.com/clasei/machinsight-client'
   },
   {
-    title: 'design system',
-    description: 'component library for consistent ui across products',
-    impact: 'reduced development time by 40% with reusable components',
-    keyDecision: 'built with storybook for isolated component development',
-    stack: ['vue', 'typescript', 'storybook', 'vite'],
-    repoUrl: 'https://github.com/clasei/project'
+    title: 'galactic hitchhiker',
+    description: 'hitchhikers guide inspired experience delivering wisdom',
+    impact: 'delivers perspective based on your state of mind',
+    keyDecision: 'json data structure for dynamic content delivery',
+    stack: ['angular', 'typescript', 'json'],
+    liveUrl: 'https://clasei.github.io/galactic-hitchhiker/',
+    repoUrl: 'https://github.com/clasei/galactic-hitchhiker'
   },
   {
-    title: 'api gateway',
-    description: 'centralized routing and authentication layer',
-    impact: 'handled 10m+ requests/day with 99.9% uptime',
-    keyDecision: 'implemented rate limiting and caching for performance',
-    stack: ['node', 'typescript', 'express', 'redis'],
-    repoUrl: 'https://github.com/clasei/project'
+    title: 'neutron link',
+    description: 'spatial simplicity for link sharing',
+    impact: 'simple and effective tool with spatial awareness',
+    keyDecision: 'firebase for real time link synchronization',
+    stack: ['react', 'firebase'],
+    liveUrl: 'https://neutron-link-0.web.app/',
+    repoUrl: 'https://github.com/clasei/neutron-link'
   },
   {
-    title: 'content cms',
-    description: 'headless cms for markdown-based content',
-    impact: 'enabled non-technical users to publish content independently',
-    keyDecision: 'chose git-based workflow for version control and rollbacks',
-    stack: ['nuxt', 'typescript', 'tailwind', 'netlify-cms'],
-    liveUrl: 'https://example.com',
-    repoUrl: 'https://github.com/clasei/project'
+    title: 'space time',
+    description: 'interactive visualization of time using physics based animations',
+    impact: 'time motion and particles in sync for immersive experience',
+    keyDecision: 'particles js for smooth performant animations',
+    stack: ['javascript', 'particles.js'],
+    liveUrl: 'https://clasei.github.io/space-time/',
+    repoUrl: 'https://github.com/clasei/space-time'
   }
 ]
 </script>
