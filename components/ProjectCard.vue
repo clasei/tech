@@ -1,7 +1,7 @@
 <template>
   <div class="glass rounded-2xl p-6 hover:shadow-2xl transition-all duration-250 hover:-translate-y-1.5 flex flex-col h-full group">
     <!-- Title -->
-    <h3 class="text-xl font-semibold mb-3 text-[var(--text-primary)] group-hover:text-[#d1d9f0] transition-colors duration-200">
+    <h3 class="text-xl font-normal mb-3 text-[var(--text-primary)] group-hover:text-[#d1d9f0] transition-colors duration-200">
       {{ project.title }}
     </h3>
 
@@ -13,11 +13,11 @@
     <!-- Impact & Decision -->
     <ul class="space-y-2 mb-4 flex-grow">
       <li class="text-sm text-[var(--text-secondary)] flex items-start gap-2">
-        <span class="text-[#8a94b8] mt-0.5">→</span>
+        <span class="text-[var(--accent)] mt-0.5">→</span>
         <span>{{ project.impact }}</span>
       </li>
       <li class="text-sm text-[var(--text-secondary)] flex items-start gap-2">
-        <span class="text-[#8a94b8] mt-0.5">→</span>
+        <span class="text-[var(--accent)] mt-0.5">→</span>
         <span>{{ project.keyDecision }}</span>
       </li>
     </ul>
@@ -63,7 +63,7 @@
   align-items: center;
   padding: 0.4rem 0.875rem;
   background: var(--surface);
-  border: 1px solid rgba(140, 150, 170, 0.2);
+  border: 1px solid rgba(120, 140, 255, 0.2);
   border-radius: 9999px;
   color: var(--text-secondary);
   font-size: 0.8125rem;
@@ -76,9 +76,9 @@
 
 .mini-crystal-link:hover {
   color: #ffffff;
-  border-color: rgba(140, 150, 170, 0.35);
+  border-color: rgba(120, 140, 255, 0.4);
   box-shadow: 
-    0 4px 12px rgba(0, 0, 0, 0.1),
+    0 4px 12px rgba(110, 168, 255, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
   transform: translateY(-1px);
 }
