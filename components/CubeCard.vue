@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   background: var(--surface);
-  border: 1px solid rgba(120, 140, 255, 0.2);
+  border: 1px solid rgba(140, 150, 170, 0.2);
   border-radius: 12px;
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.1),
@@ -65,38 +65,38 @@
   position: absolute;
   width: 220px;
   height: 220px;
-  border: 2px solid var(--accent);
+  border: 2px solid rgba(140, 150, 170, 0.4);
   opacity: 0.75;
   backdrop-filter: blur(10px);
 }
 
 .cube-face--front {
-  background: linear-gradient(135deg, rgba(110, 168, 255, 0.3), rgba(58, 92, 255, 0.2));
+  background: linear-gradient(135deg, rgba(140, 150, 170, 0.3), rgba(100, 110, 140, 0.2));
   transform: rotateY(0deg) translateZ(110px);
 }
 
 .cube-face--back {
-  background: linear-gradient(135deg, rgba(58, 92, 255, 0.3), rgba(110, 168, 255, 0.2));
+  background: linear-gradient(135deg, rgba(100, 110, 140, 0.3), rgba(140, 150, 170, 0.2));
   transform: rotateY(180deg) translateZ(110px);
 }
 
 .cube-face--right {
-  background: linear-gradient(135deg, rgba(110, 168, 255, 0.25), rgba(58, 92, 255, 0.25));
+  background: linear-gradient(135deg, rgba(140, 150, 170, 0.25), rgba(100, 110, 140, 0.25));
   transform: rotateY(90deg) translateZ(110px);
 }
 
 .cube-face--left {
-  background: linear-gradient(135deg, rgba(58, 92, 255, 0.25), rgba(110, 168, 255, 0.25));
+  background: linear-gradient(135deg, rgba(100, 110, 140, 0.25), rgba(140, 150, 170, 0.25));
   transform: rotateY(-90deg) translateZ(110px);
 }
 
 .cube-face--top {
-  background: linear-gradient(135deg, rgba(110, 168, 255, 0.2), rgba(58, 92, 255, 0.3));
+  background: linear-gradient(135deg, rgba(140, 150, 170, 0.2), rgba(100, 110, 140, 0.3));
   transform: rotateX(90deg) translateZ(110px);
 }
 
 .cube-face--bottom {
-  background: linear-gradient(135deg, rgba(58, 92, 255, 0.2), rgba(110, 168, 255, 0.3));
+  background: linear-gradient(135deg, rgba(100, 110, 140, 0.2), rgba(140, 150, 170, 0.3));
   transform: rotateX(-90deg) translateZ(110px);
 }
 </style>

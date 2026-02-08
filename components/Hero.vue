@@ -4,13 +4,13 @@
       <!-- Left: Info -->
       <div class="space-y-8">
         <div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal mb-4 text-[var(--text-secondary)] tracking-tight">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal mb-4 text-[#d1d9f0] tracking-tight">
             clara seijo
           </h1>
           <p class="text-xl md:text-2xl text-[var(--text-secondary)] mb-3 leading-relaxed">
             software developer · pragmatic systems
           </p>
-          <p class="text-lg font-mono text-[var(--accent)]">@clasei</p>
+          <p class="text-lg font-mono text-[#b0b8d5]">@clasei</p>
         </div>
 
         <div class="flex gap-4 pt-2 flex-wrap">
@@ -63,7 +63,7 @@
   gap: 0.5rem;
   padding: 0.625rem 1.25rem;
   background: var(--surface);
-  border: 1px solid rgba(120, 140, 255, 0.2);
+  border: 1px solid rgba(140, 150, 170, 0.2);
   border-radius: 9999px;
   color: var(--text-secondary);
   box-shadow: 
@@ -75,9 +75,9 @@
 
 .crystal-link:hover {
   color: #ffffff;
-  border-color: rgba(120, 140, 255, 0.5);
+  border-color: rgba(140, 150, 170, 0.4);
   box-shadow: 
-    0 8px 24px rgba(110, 168, 255, 0.2),
+    0 8px 24px rgba(0, 0, 0, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
 }

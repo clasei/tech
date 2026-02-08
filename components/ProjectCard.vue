@@ -1,7 +1,7 @@
 <template>
   <div class="glass rounded-2xl p-6 hover:shadow-2xl transition-all duration-250 hover:-translate-y-1.5 flex flex-col h-full group">
     <!-- Title -->
-    <h3 class="text-xl font-semibold mb-3 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors duration-200">
+    <h3 class="text-xl font-semibold mb-3 text-[var(--text-primary)] group-hover:text-[#d1d9f0] transition-colors duration-200">
       {{ project.title }}
     </h3>
 
@@ -12,11 +12,13 @@
 
     <!-- Impact & Decision -->
     <ul class="space-y-2 mb-4 flex-grow">
-      <li class="text-sm text-[var(--text-secondary)]">
-        {{ project.impact }}
+      <li class="text-sm text-[var(--text-secondary)] flex items-start gap-2">
+        <span class="text-[#8a94b8] mt-0.5">→</span>
+        <span>{{ project.impact }}</span>
       </li>
-      <li class="text-sm text-[var(--text-secondary)]">
-        {{ project.keyDecision }}
+      <li class="text-sm text-[var(--text-secondary)] flex items-start gap-2">
+        <span class="text-[#8a94b8] mt-0.5">→</span>
+        <span>{{ project.keyDecision }}</span>
       </li>
     </ul>
 
@@ -32,34 +34,55 @@
     </div>
 
     <!-- Links -->
-    <div class="flex gap-3 pt-2 border-t border-[var(--border)]">
+    <div class="flex gap-2 pt-2 border-t border-[var(--border)]">
       <a
         v-if="project.liveUrl"
         :href="project.liveUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="group flex items-center gap-1.5 text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] transition-all duration-150"
+        class="mini-crystal-link"
       >
-        <span>live</span>
-        <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </svg>
+        live
       </a>
       <a
         v-if="project.repoUrl"
         :href="project.repoUrl"
         target="_blank"
         rel="noopener noreferrer"
-        class="group flex items-center gap-1.5 text-sm text-[var(--text-secondary)] hover:text-[var(--accent)] transition-all duration-150"
+        class="mini-crystal-link"
       >
-        <span>repo</span>
-        <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-        </svg>
+        repo
       </a>
     </div>
   </div>
 </template>
+
+<style scoped>
+.mini-crystal-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.875rem;
+  background: var(--surface);
+  border: 1px solid rgba(140, 150, 170, 0.2);
+  border-radius: 9999px;
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  transition: all 0.2s ease;
+}
+
+.mini-crystal-link:hover {
+  color: #ffffff;
+  border-color: rgba(140, 150, 170, 0.35);
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transform: translateY(-1px);
+}
+</style>
 
 <script setup lang="ts">
 interface Project {
