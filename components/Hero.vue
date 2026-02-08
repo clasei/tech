@@ -49,7 +49,7 @@
       </div>
 
       <!-- Right: Cube -->
-      <div class="flex justify-center md:justify-end md:pr-0">
+      <div class="flex justify-center md:justify-end md:pr-12">
         <CubeCard />
       </div>
     </div>
