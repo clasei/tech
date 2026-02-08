@@ -211,8 +211,8 @@
 </template>
 
 <script setup lang="ts">
-const frontendStack = ["html", "css", "javascript", "typescript", "angular", "vue", "react", "design", "ux"];
-const backendStack = ["java", "python", "node.js", "express", "sql", "postgresql", "mongodb"];
+const frontendStack = ["typescript", "angular", "vue", "react", "design", "ux"];
+const backendStack = ["java", "python", "node.js", "express", "postgresql", "mongodb"];
 const toolsStack = ["git", "firebase", "rest-api", "testing", "ci/cd", "docs"];
 
 const projects = [
