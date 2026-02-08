@@ -34,7 +34,7 @@
         d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
       />
     </svg>
-    <!-- Mono theme icon (adjust/filter) -->
+    <!-- Mono theme icon (noir mode glasses) -->
     <svg
       v-else
       class="w-5 h-5 text-[var(--text-primary)]"
@@ -46,9 +46,20 @@
         stroke-linecap="round"
         stroke-linejoin="round"
         stroke-width="2"
-        d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313-12.454z"
+        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
       />
-      <circle cx="12" cy="12" r="3" />
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+      />
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2.5"
+        d="M2 10h20"
+      />
     </svg>
   </button>
 </template>
