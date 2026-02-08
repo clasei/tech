@@ -81,10 +81,10 @@
         <h2 class="text-3xl md:text-4xl font-normal mb-12 text-[var(--text-primary)]">about</h2>
         <div class="glass rounded-2xl p-8 lg:p-10">
           <p class="text-lg text-[var(--text-secondary)] leading-relaxed mb-6">
-            fullstack dev figuring things out through trial error and a lot of docs
+            building systems that work, shipping code that matters
           </p>
           <p class="text-lg text-[var(--text-secondary)] leading-relaxed">
-            currently working with angular vue react node spring typescript
+            eager to create impact in a team that values craft and delivery, one commit at a time
           </p>
         </div>
       </div>
