@@ -9,6 +9,7 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@nuxt/schema": "3.17.5",
     "@nuxtjs/tailwindcss": "^6.14.0",
     "autoprefixer": "^10.4.24",
     "nuxt": "3.17.5",
