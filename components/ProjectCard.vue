@@ -21,11 +21,11 @@
     </ul>
 
     <!-- Stack chips -->
-    <div class="flex flex-wrap gap-2 mb-4">
+    <div class="flex flex-wrap gap-2.5 mb-4">
       <span
         v-for="tech in project.stack"
         :key="tech"
-        class="text-xs px-2.5 py-1 rounded-md bg-[var(--surface)] border border-[var(--border)] text-[var(--text-primary)] font-medium"
+        class="text-xs text-[var(--text-primary)] opacity-60 font-mono"
       >
         {{ tech }}
       </span>

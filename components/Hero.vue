@@ -4,7 +4,7 @@
       <!-- Left: Info -->
       <div class="space-y-8">
         <div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 text-[var(--text-primary)] tracking-tight">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal mb-4 text-[var(--text-primary)] tracking-tight">
             clara seijo
           </h1>
           <p class="text-xl md:text-2xl text-[var(--text-secondary)] mb-3 leading-relaxed">

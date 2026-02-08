@@ -8,22 +8,26 @@
     <!-- How I Work / Stack -->
     <section id="work" class="px-6 py-24">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-[var(--text-primary)]">how i work / stack</h2>
+        <h2 class="text-3xl md:text-4xl font-normal mb-16 text-[var(--text-primary)]">how i work / stack</h2>
         <div class="grid md:grid-cols-2 gap-8">
           <!-- How I Work -->
           <div class="glass rounded-2xl p-8 lg:p-10">
             <ul class="space-y-4">
-              <li class="text-[var(--text-secondary)]">
-                clarity-first ux, simple solutions over clever ones
+              <li class="text-[var(--text-secondary)] flex items-start gap-3">
+                <span class="text-[var(--text-primary)] opacity-40">—</span>
+                <span>clarity-first ux, simple solutions over clever ones</span>
               </li>
-              <li class="text-[var(--text-secondary)]">
-                performance matters, measure optimize repeat
+              <li class="text-[var(--text-secondary)] flex items-start gap-3">
+                <span class="text-[var(--text-primary)] opacity-40">—</span>
+                <span>performance matters, measure optimize repeat</span>
               </li>
-              <li class="text-[var(--text-secondary)]">
-                maintainable code, future you will thank you
+              <li class="text-[var(--text-secondary)] flex items-start gap-3">
+                <span class="text-[var(--text-primary)] opacity-40">—</span>
+                <span>maintainable code, future you will thank you</span>
               </li>
-              <li class="text-[var(--text-secondary)]">
-                ship small, iterate fast, learn quickly
+              <li class="text-[var(--text-secondary)] flex items-start gap-3">
+                <span class="text-[var(--text-primary)] opacity-40">—</span>
+                <span>ship small, iterate fast, learn quickly</span>
               </li>
             </ul>
           </div>
@@ -33,24 +37,24 @@
             <div class="space-y-4">
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">frontend</p>
-                <div class="flex flex-wrap gap-2">
-                  <span v-for="tech in frontendStack" :key="tech" class="px-3 py-1.5 text-sm rounded-lg bg-[var(--surface)] border border-[var(--border)] text-[var(--text-primary)] font-medium hover:border-[var(--accent)] transition-colors">
+                <div class="flex flex-wrap gap-3">
+                  <span v-for="tech in frontendStack" :key="tech" class="text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono">
                     {{ tech }}
                   </span>
                 </div>
               </div>
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">backend</p>
-                <div class="flex flex-wrap gap-2">
-                  <span v-for="tech in backendStack" :key="tech" class="px-3 py-1.5 text-sm rounded-lg bg-[var(--surface)] border border-[var(--border)] text-[var(--text-primary)] font-medium hover:border-[var(--accent)] transition-colors">
+                <div class="flex flex-wrap gap-3">
+                  <span v-for="tech in backendStack" :key="tech" class="text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono">
                     {{ tech }}
                   </span>
                 </div>
               </div>
               <div>
                 <p class="text-sm text-[var(--text-secondary)] mb-2">tools</p>
-                <div class="flex flex-wrap gap-2">
-                  <span v-for="tech in toolsStack" :key="tech" class="px-3 py-1.5 text-sm rounded-lg bg-[var(--surface)] border border-[var(--border)] text-[var(--text-primary)] font-medium hover:border-[var(--accent)] transition-colors">
+                <div class="flex flex-wrap gap-3">
+                  <span v-for="tech in toolsStack" :key="tech" class="text-sm text-[var(--text-primary)] opacity-70 hover:opacity-100 transition-opacity font-mono">
                     {{ tech }}
                   </span>
                 </div>
@@ -64,7 +68,7 @@
     <!-- Projects -->
     <section id="projects" class="px-6 py-24 bg-[var(--bg)]">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-[var(--text-primary)]">projects</h2>
+        <h2 class="text-3xl md:text-4xl font-normal mb-16 text-[var(--text-primary)]">projects</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <ProjectCard v-for="project in projects" :key="project.title" :project="project" />
         </div>
@@ -74,13 +78,13 @@
     <!-- About -->
     <section id="about" class="px-6 py-24">
       <div class="max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-[var(--text-primary)]">about</h2>
+        <h2 class="text-3xl md:text-4xl font-normal mb-12 text-[var(--text-primary)]">about</h2>
         <div class="glass rounded-2xl p-8 lg:p-10">
           <p class="text-lg text-[var(--text-secondary)] leading-relaxed mb-6">
-            i build interfaces that work — no fluff, no unnecessary complexity, just clean code that solves real problems
+            junior fullstack developer learning by building, currently working with angular vue react node spring and typescript
           </p>
           <p class="text-lg text-[var(--text-secondary)] leading-relaxed">
-            every line matters, every decision counts, focused on craft committed to shipping
+            solving problems writing code shipping projects
           </p>
         </div>
       </div>
