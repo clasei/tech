@@ -26,7 +26,7 @@
           </p>
         </div>
 
-        <div class="flex gap-4 pt-2 flex-wrap">
+        <div class="flex gap-4 pt-2 pb-6 md:pb-0 flex-wrap">
           <a
             href="https://github.com/clasei"
             target="_blank"
@@ -115,23 +115,65 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--surface);
-  border: 1px solid rgba(120, 140, 255, 0.2);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(120, 140, 255, 0.05) 100%
+  );
+  border: 1px solid rgba(120, 140, 255, 0.3);
   border-radius: 9999px;
   color: var(--text-secondary);
   box-shadow:
-    0 4px 16px rgba(0, 0, 0, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    0 4px 16px rgba(0, 0, 0, 0.1),
+    0 2px 8px rgba(110, 168, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
-  transition: all 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(110, 168, 255, 0) 0%,
+    rgba(110, 168, 255, 0.1) 50%,
+    rgba(110, 168, 255, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon-link:hover::before {
+  opacity: 1;
 }
 
 .icon-link:hover {
   color: #6ea8ff;
-  border-color: rgba(110, 168, 255, 0.5);
+  border-color: rgba(110, 168, 255, 0.6);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(120, 140, 255, 0.12) 100%
+  );
   box-shadow:
-    0 8px 24px rgba(110, 168, 255, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    0 8px 24px rgba(110, 168, 255, 0.25),
+    0 4px 12px rgba(110, 168, 255, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
+}
+
+.icon-link:active {
+  transform: translateY(0);
+  box-shadow:
+    0 4px 12px rgba(110, 168, 255, 0.2),
+    0 2px 6px rgba(110, 168, 255, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 </style>
